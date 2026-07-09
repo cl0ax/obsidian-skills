@@ -1,26 +1,26 @@
 ---
 name: obsidian-organize
-description: Organizes an Obsidian vault by processing new or unprocessed markdown notes. Adds YAML frontmatter, wraps key terms in [[wikilinks]], creates atomic concept notes in Concepts/, builds Index files, and keeps a Home note current so the graph view shows meaningful connections. Use whenever the user mentions Obsidian, vaults, wikilinks, knowledge graphs, or note organization — including phrases like "organize my vault", "I added new notes", "process my notes", "add wikilinks", "update my Obsidian", "make my graph view useful", or anytime they drop new markdown notes into a vault and want them connected to existing ones.
+description: Organizes an Obsidian vault by processing new or unprocessed markdown notes. Adds YAML frontmatter, wraps key terms in [[wikilinks]], creates atomic concept notes in Concepts/, builds Index files, and keeps a Home note current so the graph view shows meaningful connections. Use whenever the user mentions Obsidian, vaults, wikilinks, knowledge graphs, or note organization - including phrases like "organize my vault", "I added new notes", "process my notes", "add wikilinks", "update my Obsidian", "make my graph view useful", or anytime they drop new markdown notes into a vault and want them connected to existing ones.
 ---
 
 # obsidian-organize
 
-Incrementally organizes an Obsidian vault so the graph view reflects all meaningful connections between notes. Works on new notes only — doesn't touch already-processed files unless explicitly asked.
+Incrementally organizes an Obsidian vault so the graph view reflects all meaningful connections between notes. Works on new notes only - doesn't touch already-processed files unless explicitly asked.
 
 ## Why this skill exists
 
-A blank Obsidian graph is useless. It only becomes the "second brain" people talk about when notes link to each other via `[[wikilinks]]`. But manually adding wikilinks every time you write a note is tedious, and most people don't extract recurring ideas into atomic concept notes — so concepts that appear across many notes never get a hub to link to.
+A blank Obsidian graph is useless. It only becomes the "second brain" people talk about when notes link to each other via `[[wikilinks]]`. But manually adding wikilinks every time you write a note is tedious, and most people don't extract recurring ideas into atomic concept notes - so concepts that appear across many notes never get a hub to link to.
 
-This skill automates that process. It scans the vault for unprocessed notes, extracts cross-cutting concepts into their own files, and weaves wikilinks throughout — turning a pile of disconnected markdown into a navigable knowledge graph.
+This skill automates that process. It scans the vault for unprocessed notes, extracts cross-cutting concepts into their own files, and weaves wikilinks throughout - turning a pile of disconnected markdown into a navigable knowledge graph.
 
 ## The philosophy (short version)
 
-1. **Atomic concept notes** — every recurring idea gets its own short note in `Concepts/`. Definition + key points + links to related concepts.
-2. **Wikilinks** — `[[Term]]` syntax in any note creates an edge in the graph. The more edges, the richer the graph.
-3. **Index notes** — one per topic/course/project, acts as a navigational hub.
-4. **Home note** — the master entry point that links to all indexes and concepts.
-5. **Frontmatter** — YAML metadata at the top of each note enables tag filtering, queries, and Dataview-style features.
-6. **Incremental** — never re-process already-organized notes. Only touch what's new.
+1. **Atomic concept notes** - every recurring idea gets its own short note in `Concepts/`. Definition + key points + links to related concepts.
+2. **Wikilinks** - `[[Term]]` syntax in any note creates an edge in the graph. The more edges, the richer the graph.
+3. **Index notes** - one per topic/course/project, acts as a navigational hub.
+4. **Home note** - the master entry point that links to all indexes and concepts.
+5. **Frontmatter** - YAML metadata at the top of each note enables tag filtering, queries, and Dataview-style features.
+6. **Incremental** - never re-process already-organized notes. Only touch what's new.
 
 ## Step 1: Survey the vault
 
@@ -103,7 +103,7 @@ Match whatever convention the vault is already using. If unprocessed notes are t
 ### Add [[wikilinks]] inline
 
 - Wrap the **first meaningful occurrence** of any concept-noted term in `[[]]`
-- Don't link every instance — repetition clutters
+- Don't link every instance - repetition clutters
 - Don't link trivial/passing mentions
 - If a term clearly deserves a concept note but doesn't have one yet, create the concept note (Step 4) and link it
 
@@ -117,7 +117,7 @@ Match whatever convention the vault is already using. If unprocessed notes are t
 
 ### Preserve the user's voice
 
-This is critical. **Do not** rephrase, polish, fix grammar, or delete half-formed thoughts. Questions, contradictions, and incomplete bullet points are intentional — they show where the user's understanding is. Sanitizing them removes signal.
+This is critical. **Do not** rephrase, polish, fix grammar, or delete half-formed thoughts. Questions, contradictions, and incomplete bullet points are intentional - they show where the user's understanding is. Sanitizing them removes signal.
 
 The only allowed edits are: adding frontmatter, wrapping terms in `[[]]`, and appending the related-concepts section.
 
@@ -186,12 +186,12 @@ tags: [index]
 ## What NOT to do
 
 - Don't delete or rename existing files
-- Don't rewrite or polish the user's original content — preserve their voice exactly
+- Don't rewrite or polish the user's original content - preserve their voice exactly
 - Don't create concept notes for one-off or trivial things
-- Don't wikilink every single mention — only the meaningful first occurrences
+- Don't wikilink every single mention - only the meaningful first occurrences
 - Don't re-process notes that already have proper frontmatter unless the user explicitly asks
 - Don't impose your own organizational scheme if the vault already has one
-- Don't invent content — if a note is sparse, leave it sparse (just add structure)
+- Don't invent content - if a note is sparse, leave it sparse (just add structure)
 
 ## When done
 

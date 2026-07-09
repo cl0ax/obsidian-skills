@@ -1,6 +1,6 @@
 ---
 name: obsidian-annotate
-description: Use when the user has an Obsidian note with unclear, uncertain, or incomplete parts — phrases like "I think", "find what that means", "(not exactly but...)", or quoted statements that need explanation. Adds clarifying annotations in place.
+description: Use when the user has an Obsidian note with unclear, uncertain, or incomplete parts - phrases like "I think", "find what that means", "(not exactly but...)", or quoted statements that need explanation. Adds clarifying annotations in place.
 ---
 
 # obsidian-annotate
@@ -38,6 +38,6 @@ Target lines that signal uncertainty or incompleteness:
 
 ## Steps
 
-1. **Read the note** — identify all uncertain or incomplete lines
-2. **Add annotations in place** — insert one `- *\`...\`*` line, indented directly under each line that needs clarifying
-3. **Preserve everything** — do not remove, reorder, or rephrase any original content
+1. **Read the note** - identify all uncertain or incomplete lines
+2. **Add annotations in place** - insert one `- *\`...\`*` line, indented directly under each line that needs clarifying
+3. **Preserve everything** - do not remove, reorder, or rephrase any original content

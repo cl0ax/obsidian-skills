@@ -2,7 +2,7 @@
 
 > Threads that weave your Obsidian notes into a knowledge graph.
 
-Hyphae are the branching filaments of mycelium — the underground network forests use to share nutrients between trees. This Claude Code plugin does the same thing for your notes: invisible threads that connect every idea you write to every other idea worth connecting.
+Hyphae are the branching filaments of mycelium - the underground network forests use to share nutrients between trees. This Claude Code plugin does the same thing for your notes: invisible threads that connect every idea you write to every other idea worth connecting.
 
 ## What it does
 
@@ -14,13 +14,13 @@ When you drop new markdown notes into your Obsidian vault, the skill:
 4. **Builds Index files** as navigational hubs per topic/course/project
 5. **Maintains a `Home.md`** master entry point
 
-It only processes new/unprocessed notes — already-organized files are left alone.
+It only processes new/unprocessed notes - already-organized files are left alone.
 
 ## Why?
 
 A blank Obsidian graph is useless. It only becomes the "second brain" people talk about when notes link to each other. But manually adding wikilinks and extracting concepts every time you take notes is tedious, so most vaults stay disconnected.
 
-`hyphae` fixes that. Take notes however you take notes — bullet points, stream of consciousness, half-formed thoughts — then run the skill and watch your vault become a graph.
+`hyphae` fixes that. Take notes however you take notes - bullet points, stream of consciousness, half-formed thoughts - then run the skill and watch your vault become a graph.
 
 ## Installation
 
@@ -63,7 +63,7 @@ If your vault already has frontmatter conventions, it matches them. If not, it p
 
 ## What it preserves
 
-Your voice. The skill **never** rewrites or polishes your notes. Half-formed bullets, questions to yourself, contradictions — those are signal, not noise. The only edits it makes are:
+Your voice. The skill **never** rewrites or polishes your notes. Half-formed bullets, questions to yourself, contradictions - those are signal, not noise. The only edits it makes are:
 
 1. Adding YAML frontmatter at the top
 2. Wrapping concept terms in `[[wikilinks]]`
@@ -71,14 +71,14 @@ Your voice. The skill **never** rewrites or polishes your notes. Half-formed bul
 
 ## Skills included
 
-- **`obsidian-organize`** — Scans unprocessed notes, extracts concepts, adds wikilinks, builds indexes, maintains Home.md
-- **`obsidian-annotate`** — Creates an annotated copy of a note with clarifying comments in italicized code format. Use when your notes have uncertain parts ("I think...", "find what that means", unexplained references)
+- **`obsidian-organize`** - Scans unprocessed notes, extracts concepts, adds wikilinks, builds indexes, maintains Home.md
+- **`obsidian-annotate`** - Creates an annotated copy of a note with clarifying comments in italicized code format. Use when your notes have uncertain parts ("I think...", "find what that means", unexplained references)
 
-More threads to come — daily-note templating, vault auditing, concept pruning, review workflows.
+More threads to come - daily-note templating, vault auditing, concept pruning, review workflows.
 
 ## License
 
-MIT — see [LICENSE](./LICENSE).
+MIT - see [LICENSE](./LICENSE).
 
 ## Author
 
